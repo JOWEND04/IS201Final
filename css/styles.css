@@ -1,0 +1,123 @@
+/* General Styling */
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-section {
+    padding: 100px 20px;
+    background: linear-gradient(to right, #fc4a1a, #f7b733);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Cards and Forms */
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    border-radius: 15px;
+}
+
+.card-title {
+    font-weight: bold;
+    color: #fc4a1a;
+}
+
+/* Buttons */
+.btn-primary {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+.btn-warning {
+    background-color: #f7b733;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-warning:hover {
+    background-color: #fc4a1a;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Links */
+a {
+    color: #4facfe; /* Soft blue shade */
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #2575fc; /* Deeper blue for hover */
+    text-decoration: underline;
+}
+
+/* Results */
+#result {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2575fc;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #ccc;
+    font-size: 0.9rem;
+}
+/* Back to Home Button */
+.btn-secondary {
+    background-color: #6c757d; /* Default Bootstrap secondary color */
+    color: #fff;
+    border: none;
+    border-radius: 30px; /* Makes the button oval */
+    padding: 10px 25px; /* Adds height and width */
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268; /* Slightly darker for hover effect */
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: #ddd !important;
+    font-size: 1rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #fff !important;
+}
+
+.navbar {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
