@@ -1,4 +1,125 @@
+
+/* Facebook Share Button */
+#share-buttons .facebook {
+    background-color: #3b5998 !important; /* Facebook's official color */
+    color: white !important;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+#share-buttons .facebook:hover {
+    background-color: #2d4373 !important; /* Darker Facebook blue on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+#share-buttons .facebook:active {
+    transform: translateY(1px); /* Button sinks when clicked */
+}
+
+/* Twitter Share Button */
+#share-buttons .twitter {
+    background-color: #1DA1F2 !important; /* Twitter's official color */
+    color: white !important;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+#share-buttons .twitter:hover {
+    background-color: #0d95e8 !important; /* Darker Twitter blue on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+#share-buttons .twitter:active {
+    transform: translateY(1px); /* Button sinks when clicked */
+}
+
+/* Ensure buttons remain consistent */
+#share-buttons a {
+    transition: none !important; /* Disable any transition effects from JS */
+    box-shadow: none !important; /* Prevent any box-shadow reset */
+}
+
+/* Container for Share Buttons */
+#share-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#share-buttons a {
+    margin: 0 10px; /* Space between buttons */
+}
 /* General Styling */
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.navbar {
+    margin-bottom: 30px;
+}
+
+.hero-section {
+    background: #ffdd57;
+    padding: 50px 20px;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+}
+
+.hero-section .btn {
+    font-size: 1.25rem;
+}
+
+.container {
+    padding: 0 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section .btn {
+        font-size: 1rem;
+    }
+}
+
+/* YouTube & Tableau Video Embed */
+.embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 56.25% 0 0 0;
+    overflow: hidden;
+}
+
+.embed-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Body and general styles */
 body {
     font-family: 'Open Sans', Arial, sans-serif;
     background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
@@ -86,6 +207,7 @@ footer {
     color: #ccc;
     font-size: 0.9rem;
 }
+
 /* Back to Home Button */
 .btn-secondary {
     background-color: #6c757d; /* Default Bootstrap secondary color */
@@ -103,6 +225,7 @@ footer {
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
+
 .navbar-brand {
     font-weight: bold;
     font-size: 1.5rem;
@@ -120,4 +243,143 @@ footer {
 
 .navbar {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom Navigation Bar */
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Facebook Share Button */
+#share-buttons .facebook {
+    background-color: #3b5998; /* Facebook's official color */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+#share-buttons .facebook:hover {
+    background-color: #2d4373; /* Darker Facebook blue on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+#share-buttons .facebook:active {
+    transform: translateY(1px); /* Button sinks when clicked */
+}
+
+/* Twitter Share Button */
+#share-buttons .twitter {
+    background-color: #1DA1F2; /* Twitter's official color */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+#share-buttons .twitter:hover {
+    background-color: #0d95e8; /* Darker Twitter blue on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+#share-buttons .twitter:active {
+    transform: translateY(1px); /* Button sinks when clicked */
+}
+
+/* Share Button Container */
+#share-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#share-buttons a {
+    margin: 0 10px; /* Space between buttons */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    nav a {
+        font-size: 16px;
+        margin: 0 10px;
+    }
+
+    .images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .images img {
+        max-width: 80%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 10px;
+    }
+
+    .hero-section {
+        padding: 20px 10px;
+    }
+
+    .hero-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-section .btn {
+        font-size: 0.9rem;
+    }
+
+    .container {
+        padding: 10px;
+    }
 }

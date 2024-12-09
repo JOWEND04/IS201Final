@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<!-- Navigation Bar -->
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="resume-scratch.html">Owen Davis</a>
+            <a class="navbar-brand" href="index.html">Owen Davis</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -21,10 +21,10 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="resume-scratch.html">Resume & Scratch</a>
+                        <a class="nav-link" href="resume.html">Resume</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="web-app.html">Web App</a>
+                        <a class="nav-link" href="scratch.html">Scratch</a>
                     </li>
                 </ul>
             </div>
@@ -36,100 +36,119 @@
             <h1 class="card-title text-center">Discover Your Personality Type</h1>
             <p class="card-text text-center">Answer these 10 questions to find out more about yourself!</p>
             <form id="quiz-form">
-    <div class="mb-3">
-        <label for="q1" class="form-label">1. How do you handle challenges?</label>
-        <select id="q1" class="form-select">
-            <option value="1">I face them head-on</option>
-            <option value="2">I analyze and plan</option>
-            <option value="3">I avoid them</option>
-        </select>
-    </div>
-    <div class="mb-3">
-        <label for="q2" class="form-label">2. What is your preferred work environment?</label>
-        <select id="q2" class="form-select">
-            <option value="1">Team-based</option>
-            <option value="2">Independent</option>
-            <option value="3">Flexible</option>
-        </select>
-    </div>
-    <div class="mb-3">
-        <label for="q3" class="form-label">3. How do you spend your weekends?</label>
-        <select id="q3" class="form-select">
-            <option value="1">Exploring the outdoors</option>
-            <option value="2">Reading or learning something new</option>
-            <option value="3">Relaxing and unwinding</option>
-        </select>
-    </div>
-    <div class="mb-3">
-        <label for="q4" class="form-label">4. What motivates you the most?</label>
-        <select id="q4" class="form-select">
-            <option value="1">Helping others</option>
-            <option value="2">Achieving personal goals</option>
-            <option value="3">Experiencing new things</option>
-        </select>
-    </div>
-    <div class="mb-3">
-        <label for="q5" class="form-label">5. What is your approach to learning new skills?</label>
-        <select id="q5" class="form-select">
-            <option value="1">Hands-on practice</option>
-            <option value="2">Researching and studying</option>
-            <option value="3">Trial and error</option>
-        </select>
-    </div>
-    <div class="mb-3">
-        <label for="q6" class="form-label">6. How do you usually make decisions?</label>
-        <select id="q6" class="form-select">
-            <option value="1">Based on logic and facts</option>
-            <option value="2">Following my intuition</option>
-            <option value="3">Seeking advice from others</option>
-        </select>
-    </div>
-    <div class="mb-3">
-        <label for="q7" class="form-label">7. What is your communication style?</label>
-        <select id="q7" class="form-select">
-            <option value="1">Direct and concise</option>
-            <option value="2">Thoughtful and empathetic</option>
-            <option value="3">Friendly and casual</option>
-        </select>
-    </div>
-    <div class="mb-3">
-        <label for="q8" class="form-label">8. How do you prefer to spend your vacation?</label>
-        <select id="q8" class="form-select">
-            <option value="1">Planning and visiting landmarks</option>
-            <option value="2">Relaxing in a peaceful setting</option>
-            <option value="3">Trying adventurous activities</option>
-        </select>
-    </div>
-    <div class="mb-3">
-        <label for="q9" class="form-label">9. What type of books or movies do you enjoy?</label>
-        <select id="q9" class="form-select">
-            <option value="1">Non-fiction or documentaries</option>
-            <option value="2">Mystery and thrillers</option>
-            <option value="3">Fantasy or sci-fi</option>
-        </select>
-    </div>
-    <div class="mb-3">
-        <label for="q10" class="form-label">10. What is your ideal way to unwind after a long day?</label>
-        <select id="q10" class="form-select">
-            <option value="1">Exercising or engaging in a hobby</option>
-            <option value="2">Spending time with loved ones</option>
-            <option value="3">Watching TV or playing games</option>
-        </select>
-    </div>
-</form>
-            <button class="btn btn-primary w-100 mt-3" type="button" onclick="calculateResult()">Reveal My Personality</button>
-            <div id="result" class="mt-4 text-center"></div>
-            <div id="share-buttons" class="mt-3 text-center">
-                <!-- Social Sharing Buttons -->
-                <a href="#" class="btn btn-warning me-2" onclick="shareResult('facebook')">Share on Facebook</a>
-                <a href="#" class="btn btn-warning" onclick="shareResult('twitter')">Share on Twitter</a>
+                <div class="mb-3">
+                    <label for="q1" class="form-label">1. How do you handle challenges?</label>
+                    <select id="q1" class="form-select" aria-label="How do you handle challenges?">
+                        <option value="">Select an option</option>
+                        <option value="1">I face them head-on</option>
+                        <option value="2">I analyze and plan</option>
+                        <option value="3">I avoid them</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="q2" class="form-label">2. What is your preferred work environment?</label>
+                    <select id="q2" class="form-select" aria-label="What is your preferred work environment?">
+                        <option value="">Select an option</option>
+                        <option value="1">Team-based</option>
+                        <option value="2">Independent</option>
+                        <option value="3">Flexible</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="q3" class="form-label">3. How do you spend your weekends?</label>
+                    <select id="q3" class="form-select" aria-label="How do you spend your weekends?">
+                        <option value="">Select an option</option>
+                        <option value="1">Exploring the outdoors</option>
+                        <option value="2">Reading or learning something new</option>
+                        <option value="3">Relaxing and unwinding</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="q4" class="form-label">4. What motivates you the most?</label>
+                    <select id="q4" class="form-select" aria-label="What motivates you the most?">
+                        <option value="">Select an option</option>
+                        <option value="1">Helping others</option>
+                        <option value="2">Achieving personal goals</option>
+                        <option value="3">Experiencing new things</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="q5" class="form-label">5. What is your approach to learning new skills?</label>
+                    <select id="q5" class="form-select" aria-label="What is your approach to learning new skills?">
+                        <option value="">Select an option</option>
+                        <option value="1">Hands-on practice</option>
+                        <option value="2">Researching and studying</option>
+                        <option value="3">Trial and error</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="q6" class="form-label">6. How do you usually make decisions?</label>
+                    <select id="q6" class="form-select" aria-label="How do you usually make decisions?">
+                        <option value="">Select an option</option>
+                        <option value="1">Based on logic and facts</option>
+                        <option value="2">Following my intuition</option>
+                        <option value="3">Seeking advice from others</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="q7" class="form-label">7. What is your communication style?</label>
+                    <select id="q7" class="form-select" aria-label="What is your communication style?">
+                        <option value="">Select an option</option>
+                        <option value="1">Direct and concise</option>
+                        <option value="2">Thoughtful and empathetic</option>
+                        <option value="3">Friendly and casual</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="q8" class="form-label">8. How do you prefer to spend your vacation?</label>
+                    <select id="q8" class="form-select" aria-label="How do you prefer to spend your vacation?">
+                        <option value="">Select an option</option>
+                        <option value="1">Planning and visiting landmarks</option>
+                        <option value="2">Relaxing in a peaceful setting</option>
+                        <option value="3">Trying adventurous activities</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="q9" class="form-label">9. What type of books or movies do you enjoy?</label>
+                    <select id="q9" class="form-select" aria-label="What type of books or movies do you enjoy?">
+                        <option value="">Select an option</option>
+                        <option value="1">Non-fiction or documentaries</option>
+                        <option value="2">Mystery and thrillers</option>
+                        <option value="3">Fantasy or sci-fi</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="q10" class="form-label">10. What is your ideal way to unwind after a long day?</label>
+                    <select id="q10" class="form-select" aria-label="What is your ideal way to unwind after a long day?">
+                        <option value="">Select an option</option>
+                        <option value="1">Exercising or engaging in a hobby</option>
+                        <option value="2">Spending time with loved ones</option>
+                        <option value="3">Watching TV or playing games</option>
+                    </select>
+                </div>
+            </form>
+
+            <button class="btn btn-primary w-100 mt-3" type="button" onclick="if (validateForm()) { calculateResult(); }">Reveal My Personality</button>
+
+            <!-- Loading Spinner -->
+            <div id="loading" class="text-center" style="display: none;">
+                <div class="spinner-border" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
             </div>
+
+            <div id="result" class="mt-4 text-center"></div>
+
+            <div id="share-buttons">
+    <a href="https://www.facebook.com/sharer/sharer.php?u=<YOUR_URL>" class="facebook" target="_blank">Share on Facebook</a>
+    <a href="https://twitter.com/intent/tweet?url=<YOUR_URL>&text=Check%20this%20out!" class="twitter" target="_blank">Share on Twitter</a>
+</div>
+
             <a href="index.html" class="btn btn-secondary mt-3">Back to Home</a>
         </div>
     </div>
+
     <footer class="text-center mt-5 py-3 bg-dark text-light">
         &copy; 2024 Personality Quiz | Share and Compare Your Results!
     </footer>
-    <script src="js/app.js"></script>
-</body>
-</html>
+<script src="js/app.js"></script>

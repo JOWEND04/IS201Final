@@ -31,19 +31,20 @@ function calculateResult() {
         <p>${descriptions[personality] || "You're a unique blend of qualities! Keep being you."}</p>
     `;
 
-    // Generate share buttons
+    // Generate share buttons with pre-defined styles
     const shareDiv = document.getElementById('share-buttons');
     const shareText = `I just discovered my personality type: ${personality}! Find out yours by taking this fun quiz!`;
     const shareURL = encodeURIComponent(location.href);
     shareDiv.innerHTML = `
         <a href="https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${shareURL}" target="_blank">
-            <button class="btn btn-info">Share on Twitter</button>
+            <button class="btn twitter-btn">Share on Twitter</button>
         </a>
         <a href="https://www.facebook.com/sharer/sharer.php?u=${shareURL}" target="_blank">
-            <button class="btn btn-primary">Share on Facebook</button>
+            <button class="btn facebook-btn">Share on Facebook</button>
         </a>
     `;
 }
+
 function shareResult(platform) {
     const result = document.getElementById("result").innerText;
     const url = encodeURIComponent(window.location.href);
@@ -61,4 +62,15 @@ function shareResult(platform) {
     } else {
         alert("Sharing not supported for this platform.");
     }
+}
+
+function validateForm() {
+    const form = document.getElementById("quiz-form");
+    for (let i = 0; i < form.elements.length; i++) {
+        if (form.elements[i].tagName === 'SELECT' && !form.elements[i].value) {
+            alert("Please answer all questions.");
+            return false;
+        }
+    }
+    return true;
 }
